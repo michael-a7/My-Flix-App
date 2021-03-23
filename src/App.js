@@ -1,10 +1,11 @@
 import React from "react";
 import {render} from 'react-dom';
+import Jumbotron from './components/jumbotron'
 
 function App() {
   return (
     <div className="App">
-      <p>HI</p>
+      <Jumbotron />
     </div>
   );
 }
