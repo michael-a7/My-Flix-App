@@ -11,16 +11,22 @@ export const InnerStyle = styled.div`
   }
 `;
 
-export const Divide = styled.div`
-  background-color: black;
-`;
+export const Divide = styled.div``;
 export const Title = styled.h1`
   color: white;
+  font-size: 50px;
+  font-weight: normal;
+  margin-bottom: 30px;
 `;
 export const Subtitle = styled.h3`
   color: white;
+  font-size: 25px;
+  font-weight: normal;
 `;
-export const Image = styled.img``;
+export const Image = styled.img`
+  max-width: 100%;
+  height: auto;
+`;
 export const Square = styled.div`
   width: 50%;
 `;
