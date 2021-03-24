@@ -13,3 +13,7 @@ export const InnerStyle = styled.div`
 `;
 
 export const Divide = styled.div``;
+export const Title = styled.h1``;
+export const Subtitle = styled.h2``;
+export const Image = styled.image``;
+export const Square = styled.div``;
