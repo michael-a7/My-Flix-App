@@ -3,7 +3,6 @@ export const InnerStyle = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: ${({ direction }) => direction};
-  border: 5px black solid;
   margin: auto;
   max-width: 1100px;
   width: 100%;
@@ -12,8 +11,16 @@ export const InnerStyle = styled.div`
   }
 `;
 
-export const Divide = styled.div``;
-export const Title = styled.h1``;
-export const Subtitle = styled.h2``;
-export const Image = styled.image``;
-export const Square = styled.div``;
+export const Divide = styled.div`
+  background-color: black;
+`;
+export const Title = styled.h1`
+  color: white;
+`;
+export const Subtitle = styled.h3`
+  color: white;
+`;
+export const Image = styled.img``;
+export const Square = styled.div`
+  width: 50%;
+`;

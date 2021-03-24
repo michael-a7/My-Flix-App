@@ -19,8 +19,8 @@ Jumbotron.Title = function JumbotronTitle({ children }) {
 Jumbotron.Subtitle = function JumbotronSubtitle({ children }) {
   return <Subtitle>{children}</Subtitle>;
 };
-Jumbotron.Image = function JumbotronImage() {
-  return <Image />;
+Jumbotron.Image = function JumbotronImage({ ...restProps }) {
+  return <Image {...restProps} />;
 };
 Jumbotron.Square = function JumbotronSquare({ children }) {
   return <Square>{children}</Square>;
