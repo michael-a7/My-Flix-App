@@ -1,8 +1,13 @@
 import React from 'react';
-import { InnerStyle } from './styles/jumbotron';
-function Jumbotron({}){
-return(<InnerStyle>
-    <p>Hi</p>
-</InnerStyle>)
+import { InnerStyle, Divide } from './styles/jumbotron';
+function Jumbotron({children, direction = 'row'}){
+    return(
+    <InnerStyle direction={direction}>
+        {children}
+    </InnerStyle>
+    )
+}
+Jumbotron.Divide = function JumboContain({children}){
+    return <Divide>{children}</Divide>;
 }
 export default Jumbotron
