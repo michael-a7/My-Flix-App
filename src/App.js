@@ -2,6 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import Data from "./fixtures/jumbo.json";
 import Jumbotron from "./components/jumbotron";
+import { FooterContainer } from "./containers/FooterContainer";
 function App() {
   return (
     <div>
@@ -18,6 +19,7 @@ function App() {
           </Jumbotron>
         ))}
       </Jumbotron.Divide>
+      <FooterContainer />
     </div>
   );
 }
