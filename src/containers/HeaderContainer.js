@@ -1,5 +1,14 @@
 import React from "react";
-function HeaderContainer() {
-  return <h1>Hi</h1>;
+import { Header } from "../components";
+function HeaderContainer({ children }) {
+  return (
+    <Header>
+      <Header.Frame>
+        <Header.Logo />
+        <Header.Button />
+      </Header.Frame>
+      {children}
+    </Header>
+  );
 }
 export default HeaderContainer;
