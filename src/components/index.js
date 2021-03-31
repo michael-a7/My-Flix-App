@@ -4,3 +4,4 @@ export { default as Email } from "./email";
 export { default as Jumbotron } from "./jumbotron";
 export { default as Header } from "./header";
 export { default as HomeText } from "./HomeText";
+export { default as Form } from "./form";

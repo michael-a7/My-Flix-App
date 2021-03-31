@@ -24,10 +24,12 @@ export const Button = styled(ReactRouterLink)`
   padding: 8px 17px;
   height: fit-content;
   color: white;
+  border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
   text-decoration: none;
   &:hover {
     background-color: darkred;
+    text-decoration: underline;
   }
 `;

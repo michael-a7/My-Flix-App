@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const InnerStyle = styled.div`
   display: flex;
-  padding: 70px 0px;
+  padding: 70px 56px;
   margin: auto;
   flex-direction: column;
 `;
@@ -13,11 +13,11 @@ export const Column = styled.div`
 `;
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax (230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   grid-gap: 15px;
 `;
 export const Link = styled.a`
-  color: blue;
+  color: grey;
   margin-bottom: 20px;
   font-size: 13px;
   text-decoration: none;
@@ -25,7 +25,7 @@ export const Link = styled.a`
 
 export const Title = styled.p`
   font-size: 20px;
-  color: green;
+  color: white;
   margin-bottom: 40px;
   text-decoration: bold;
 `;

@@ -10,7 +10,7 @@ function HeaderContainer({ children }) {
           src="/images/icons/netflixlogo-removebg-preview.png"
           alt="Netflix Home"
         />
-        <Header.Button to={ROUTES.BROWSE}> Sign In </Header.Button>
+        <Header.Button to={ROUTES.SIGN_IN}>Sign In</Header.Button>
       </Header.Frame>
       {children}
     </Header>

@@ -23,6 +23,7 @@ export const Item = styled.div`
   max-width: 670px;
   width: 100%;
   background-color: grey;
+  cursor: pointer;
 `;
 export const Header = styled.h1`
   margin-left: 20px;
@@ -35,4 +36,5 @@ export const Body = styled.p`
   background-color: darkgrey;
   padding: 10px;
   transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  cursor: default;
 `;

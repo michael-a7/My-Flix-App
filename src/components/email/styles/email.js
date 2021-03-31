@@ -34,6 +34,7 @@ export const Button = styled.button`
   }
   &:hover {
     background-color: darkred;
+    text-decoration: underline;
   }
 `;
 export const Text = styled.p`
