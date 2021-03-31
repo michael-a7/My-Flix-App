@@ -1,11 +1,16 @@
 import React from "react";
 import { Header } from "../components";
+import * as ROUTES from "../components/links/routes";
 function HeaderContainer({ children }) {
   return (
     <Header>
       <Header.Frame>
-        <Header.Logo />
-        <Header.Button />
+        <Header.Logo
+          to={ROUTES.HOME}
+          src="/images/icons/netflixlogo-removebg-preview.png"
+          alt="Netflix Home"
+        />
+        <Header.Button to={ROUTES.BROWSE}> Sign In </Header.Button>
       </Header.Frame>
       {children}
     </Header>

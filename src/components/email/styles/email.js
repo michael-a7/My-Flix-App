@@ -32,6 +32,9 @@ export const Button = styled.button`
     filter: brightness(0) invert(1);
     width: 16px;
   }
+  &:hover {
+    background-color: darkred;
+  }
 `;
 export const Text = styled.p`
   color: white;

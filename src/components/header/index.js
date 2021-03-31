@@ -8,7 +8,7 @@ Header.Frame = function HeaderFrame({ children }) {
   return <InnerStyle>{children} </InnerStyle>;
 };
 
-Header.Logo = function HeaderLogo({ link }) {
+Header.Logo = function HeaderLogo({ link, ...restProps }) {
   return (
     <ReactRouterLink to={link}>
       <Logo />
