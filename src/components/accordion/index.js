@@ -6,6 +6,8 @@ import {
   Item,
   Header,
   Body,
+  Frame,
+  Break,
 } from "./styles/accordion";
 const ToggleContext = createContext();
 
@@ -18,6 +20,9 @@ function Accordion({ children }) {
 }
 Accordion.Title = function AccordionTitle({ children }) {
   return <Title>{children}</Title>;
+};
+Accordion.Frame = function AccordionFrame({ children }) {
+  return <Frame>{children}</Frame>;
 };
 Accordion.Item = function AccordionItem({ children }) {
   const [toggle, setToggle] = useState(false);
@@ -51,3 +56,6 @@ Accordion.Body = function AccordionBody({ children }) {
   }
 };
 export default Accordion;
+Accordion.Break = function AccordionBreak() {
+  return <Break />;
+};

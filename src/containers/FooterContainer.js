@@ -4,7 +4,6 @@ export function FooterContainer() {
   return (
     <Footer>
       <Footer.Title>Questions? Call 1-844-505-2993</Footer.Title>
-      {/* NEED TO FIX ROW/COLUMN DISPLAY */}
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>

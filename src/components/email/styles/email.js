@@ -24,7 +24,8 @@ export const Button = styled.button`
   border: 0;
   margin-bottom: 15px;
   height: 40px;
-  font-size: 26px;
+  border-radius: 2px;
+  font-size: 23px;
   padding: 10px;
   cursor: pointer;
   img {
@@ -39,4 +40,8 @@ export const Button = styled.button`
 `;
 export const Text = styled.p`
   color: white;
+`;
+export const Break = styled.div`
+  flex-basis: 100%;
+  height: 0;
 `;

@@ -14,12 +14,13 @@ export default function Home() {
           <HomeText.Subtitle>Watch anywhere. Cancel anytime.</HomeText.Subtitle>
         </HomeText>
         <Email>
+          <Email.Input />
+          <Email.Button>Get Started</Email.Button>
+          <Email.Break />
           <Email.Text>
             Ready to watch? Enter your email to create or restart your
             membership.
           </Email.Text>
-          <Email.Input />
-          <Email.Button>Get Started</Email.Button>
         </Email>
       </HeaderContainer>
       <JumbotronContainer />

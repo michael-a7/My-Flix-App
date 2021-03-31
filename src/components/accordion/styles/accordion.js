@@ -2,7 +2,7 @@ import styled from "styled-components/macro";
 
 export const InnerStyle = styled.div`
   display: flex;
-  padding: 70px 40px;
+  padding: 50px 40px;
   max-width: 815px;
   margin: auto;
   img {
@@ -12,15 +12,17 @@ export const InnerStyle = styled.div`
   }
 `;
 export const OuterStyle = styled.div``;
+export const Frame = styled.div``;
 export const Title = styled.h1`
   color: white;
-  margin-right: 10px;
+  margin-left: 500px;
 `;
 export const Item = styled.div`
-  margin-bottom: 0px;
+  margin-top: 100px;
   color: white;
   margin: auto;
-  max-width: 670px;
+  margin-bottom: 20px;
+  max-width: 800px;
   width: 100%;
   background-color: grey;
   cursor: pointer;
@@ -37,4 +39,8 @@ export const Body = styled.p`
   padding: 10px;
   transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
   cursor: default;
+`;
+export const Break = styled.div`
+  width: 100px;
+  height: 50px;
 `;
