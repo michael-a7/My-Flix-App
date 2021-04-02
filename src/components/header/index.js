@@ -16,7 +16,7 @@ Header.Logo = function HeaderLogo({ link, ...restProps }) {
   );
 };
 
-Header.Button = function HeaderButton({ children }) {
-  return <Button>{children}</Button>;
+Header.Button = function HeaderButton({ children, ...restProps }) {
+  return <Button {...restProps}>{children}</Button>;
 };
 export default Header;

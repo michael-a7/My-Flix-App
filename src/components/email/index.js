@@ -1,5 +1,5 @@
 import React from "react";
-import { InnerStyle, Input, Button, Text, Break } from "./styles/email";
+import { InnerStyle, Input, Button, Text, Break, Link } from "./styles/email";
 export default function Email({ children }) {
   return <InnerStyle>{children}</InnerStyle>;
 }
@@ -19,4 +19,7 @@ Email.Text = function EmailText({ children }) {
 };
 Email.Break = function EmailBreak() {
   return <Break />;
+};
+Email.Link = function EmailLink({ children }) {
+  return <Link>{children}</Link>;
 };
