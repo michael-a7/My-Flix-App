@@ -5,8 +5,8 @@ import { FooterContainer } from "../containers/FooterContainer";
 import { Form } from "../components";
 export default function Signin() {
   // const {firebase } = useContext(FirebaseContext);
-  const [emailAddress, setEmailAddress] = useState("");
-  const [password, setPassword] = useState("");
+  const [emailAddress, setEmailAddress] = useState();
+  const [password, setPassword] = useState();
   const [error, setError] = useState("");
   const isInvalid = password === "" || emailAddress === "";
   const handleSignin = (event) => {
@@ -21,6 +21,7 @@ export default function Signin() {
           <Form.Base onSubmit={handleSignin} method="POST">
             <Form.Input
               placeholder="Email address"
+              type="text"
               value={emailAddress}
               onchange={({ t }) => setEmailAddress(t.value)}
             />
