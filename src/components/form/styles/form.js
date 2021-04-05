@@ -56,20 +56,31 @@ text-decoration: none;
 }
 `;
 export const Input = styled.input`
-  border-radius: 4px;
-  padding: 2px 0px;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  border: 0;
+  outline: none;
+  padding: 8px 0px;
   margin: 2px 0px;
 `;
 export const Submit = styled.button`
   background-color: red;
   margin-top: 10px;
-  border-radius: 8px;
+  border-radius: 2px;
   padding: 8px 0px;
   border: none;
   color: white;
   cursor: pointer;
+  outline: none;
   &:hover {
     background-color: darkred;
     text-decoration: underline;
+  }
+  &:disabled {
+    cursor: default;
+    background-color: rgb(64, 0, 0);
+    text: lightgrey;
+    text-decoration: none;
   }
 `;

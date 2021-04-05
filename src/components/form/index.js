@@ -34,7 +34,7 @@ Form.Link = function FormLink({ children }) {
 Form.Input = function FormInput({ children, ...restProps }) {
   return <Input {...restProps}>{children}</Input>;
 };
-Form.Submit = function FormSubmit({ children }) {
-  return <Submit>{children}</Submit>;
+Form.Submit = function FormSubmit({ children, ...restProps }) {
+  return <Submit {...restProps}>{children}</Submit>;
 };
 export default Form;
