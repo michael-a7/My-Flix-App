@@ -56,12 +56,12 @@ text-decoration: none;
 }
 `;
 export const Input = styled.input`
-  border-radius: 8px;
+  border-radius: 4px;
   background-color: #333;
   color: white;
   border: 0;
   outline: none;
-  padding: 8px 0px;
+  padding: 8px 3px;
   margin: 2px 0px;
 `;
 export const Submit = styled.button`

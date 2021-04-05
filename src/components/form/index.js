@@ -28,8 +28,8 @@ Form.Text = function FormText({ children }) {
 Form.SmallText = function FormSmallText({ children }) {
   return <SmallText>{children}</SmallText>;
 };
-Form.Link = function FormLink({ children }) {
-  return <Link>{children}</Link>;
+Form.Link = function FormLink({ children, ...restProps }) {
+  return <Link {...restProps}>{children}</Link>;
 };
 Form.Input = function FormInput({ children, ...restProps }) {
   return <Input {...restProps}>{children}</Input>;

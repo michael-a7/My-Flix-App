@@ -5,6 +5,7 @@ import HeaderContainer from "../containers/HeaderContainer";
 import { FooterContainer } from "../containers/FooterContainer";
 import { Form } from "../components";
 import * as ROUTES from "../constants/routes";
+import { SIGN_IN, SIGN_UP } from "../components/links/routes";
 export default function Signin() {
   const { firebase } = useContext(FirebaseContext);
   const [emailAddress, setEmailAddress] = useState();
@@ -51,7 +52,7 @@ export default function Signin() {
             </Form.Submit>
           </Form.Base>
           <Form.Text>
-            New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+            New to Netflix? <Form.Link to={SIGN_UP}>Sign up now.</Form.Link>
           </Form.Text>
           <Form.SmallText>
             This page is protected by Google reCAPTCHA to ensure you're not a
@@ -59,7 +60,6 @@ export default function Signin() {
           </Form.SmallText>
         </Form>
       </HeaderContainer>
-      ;
       <FooterContainer />
     </>
   );
