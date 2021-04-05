@@ -16,7 +16,10 @@ export const InnerStyle = styled.div`
   justify-content: space-betweem;
   align-items: center;
 `;
-export const Logo = styled.img``;
+export const Logo = styled.img`
+  height: 30px;
+  margin-right: 1110px;
+`;
 export const Button = styled(ReactRouterLink)`
   display: block;
   background-color: red;
