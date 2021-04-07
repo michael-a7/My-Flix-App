@@ -13,11 +13,11 @@ import {
 function Form({ children }) {
   return <InnerStyle>{children}</InnerStyle>;
 }
-Form.Base = function FormBase({ children }) {
-  return <Base>{children}</Base>;
+Form.Base = function FormBase({ children, ...restProps }) {
+  return <Base {...restProps}>{children}</Base>;
 };
-Form.Error = function FormError({ children }) {
-  return <Error>{children}</Error>;
+Form.Error = function FormError({ children, ...restProps }) {
+  return <Error {...restProps}>{children}</Error>;
 };
 Form.Title = function FormTitle({ children }) {
   return <Title>{children}</Title>;
