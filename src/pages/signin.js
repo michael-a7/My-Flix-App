@@ -1,8 +1,13 @@
 import React, { useState, useContext } from "react";
+import { useHistory } from "react-router-dom";
+import { FirebaseContext } from "../context/firebase";
 import { FooterContainer } from "../containers/FooterContainer";
 import HeaderContainer from "../containers/HeaderContainer";
 import { Form } from "../components";
+import * as ROUTES from "../constants/routes";
 export default function Signin() {
+  const history = useHistory();
+  const { firebase } = useContext(FirebaseContext);
   const [emailAddress, setEmailAddress] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -10,6 +15,18 @@ export default function Signin() {
   const isInvalid = password === "" || emailAddress === "";
   const handleSignIn = (event) => {
     event.preventDefault();
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(emailAddress, password)
+      .then(() => {
+        history.push(ROUTES.BROWSE);
+      })
+      .catch((error) => {
+        setEmailAddress("");
+        setPassword("");
+        setError(error.message);
+      });
   };
   return (
     <>
@@ -32,6 +49,13 @@ export default function Signin() {
             <Form.Submit disabled={isInvalid} type="submit">
               Sign In
             </Form.Submit>
+            <Form.Text>
+              New to Netflix? <Form.Link to="/signup">Sign up now.</Form.Link>
+            </Form.Text>
+            <Form.SmallText>
+              This page is protected by Google reCAPTCHA to ensure you're not a
+              bot. Learn more.
+            </Form.SmallText>
           </Form.Base>
         </Form>
       </HeaderContainer>
