@@ -1,5 +1,31 @@
 import React from "react";
+import { Header } from "../components";
+import * as ROUTES from "../constants/routes";
+import { Profiles } from "../components";
+//Need Logo
 function SelectProfileContainer({ user, setProfile }) {
-  return <p>Selection Profile...</p>;
+  return (
+    <>
+      <Header background={false}>
+        <Header.Frame>
+          <Header.Logo
+            to={ROUTES.HOME}
+            src="/images/icons/netflixlogo-removebg-preview.png"
+            alt="Netflix Home"
+          />
+        </Header.Frame>
+      </Header>
+
+      <Profiles>
+        <Profiles.Title>Who's Watching?</Profiles.Title>
+        <Profiles.List>
+          <Profiles.User>
+            <Profiles.Picture src={user.photoURL} />
+            <Profiles.Name>{user.displayName}</Profiles.Name>
+          </Profiles.User>
+        </Profiles.List>
+      </Profiles>
+    </>
+  );
 }
 export default SelectProfileContainer;
