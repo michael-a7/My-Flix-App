@@ -4,7 +4,7 @@ export const Background = styled.div`
   display: flex;
   flex-direction: column;
   background: url(${({ src }) =>
-      src ? `../images/misc/#{src}.jpg` : "../images/misc/home-bg.jpg"})
+      src ? `../images/misc/${src}.jpg` : "../images/misc/home-bg.jpg"})
     top left/cover no-repeat;
 `;
 export const Frame = styled.div``;
@@ -35,4 +35,12 @@ export const Button = styled(ReactRouterLink)`
     background-color: darkred;
     text-decoration: underline;
   }
+`;
+
+export const Feature = styled(InnerStyle)`
+  padding: 150px 0 500px 0;
+  flex-direction: column;
+  align-items: normal;
+  width: 50%;
+  background-color: black;
 `;

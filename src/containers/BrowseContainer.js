@@ -18,8 +18,8 @@ function BrowseContainer({ slides }) {
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-      <Header src="/images/icons/netflixlogo-removebg-preview.png">
-        <p>Hello</p>
+      <Header>
+        <Header.Frame></Header.Frame>
       </Header>
     </>
   ) : (
