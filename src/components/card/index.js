@@ -1,5 +1,4 @@
 import React, { useState, useContext, createContext } from "react";
-import { InnerStyle } from "../accordion/styles/accordion";
 
 import {
   InnerStyle,
