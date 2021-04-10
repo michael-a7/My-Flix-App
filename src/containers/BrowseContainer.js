@@ -18,7 +18,7 @@ function BrowseContainer({ slides }) {
   return profile.displayName ? (
     <>
       {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
-      <Header>
+      <Header src="joker1">
         <Header.Frame></Header.Frame>
       </Header>
     </>
