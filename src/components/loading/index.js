@@ -2,7 +2,7 @@ import React from "react";
 import { Spinner, LockBody, ReleaseBody, Picture } from "./styles/loading";
 function Loading({ src, ...restProps }) {
   return (
-    <Spinner>
+    <Spinner {...restProps}>
       <LockBody />
       <Picture src={"/images/users/1.png"} />
     </Spinner>

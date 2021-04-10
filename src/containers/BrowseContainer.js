@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { BrowserRouter } from "react-router-dom";
 import SelectProfileContainer from "./ProfileContainer";
 import { FirebaseContext } from "../context/firebase";
-import { Loading } from "../components";
+import { Header, Loading } from "../components";
 function BrowseContainer({ slides }) {
   const [profile, setProfile] = useState({});
   const [loading, setLoading] = useState(true);
@@ -16,9 +16,12 @@ function BrowseContainer({ slides }) {
     }, 3000);
   }, [profile.displayName]);
   return profile.displayName ? (
-    loading ? (
-      <Loading src={user.photoURL} />
-    ) : null
+    <>
+      {loading ? <Loading src={user.photoURL} /> : <Loading.ReleaseBody />}
+      <Header src="/images/icons/netflixlogo-removebg-preview.png">
+        <p>Hello</p>
+      </Header>
+    </>
   ) : (
     <SelectProfileContainer user={user} setProfile={setProfile} />
   );
